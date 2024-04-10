@@ -12,3 +12,14 @@ public class VaathiyaruApplication {
 
 
 }
+//{"_id":{"$numberInt":"25"},"email":"harinaga20@gmail.com"}
+
+//{
+//		"id":"111",
+//		"heading":"MCA 2023 - 2025",
+//		"desc":"All Placed",
+//		"location":"Sillicon Valley",
+//		"exp":"21"
+//
+//
+//		}

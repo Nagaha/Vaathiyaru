@@ -15,4 +15,6 @@ public interface TutorRepo  extends MongoRepository<Tutor,Integer> {
     List<Tutor> findByLocation(String offline);
 
     List<Tutor> findByHeading(String role);
+
+
 }

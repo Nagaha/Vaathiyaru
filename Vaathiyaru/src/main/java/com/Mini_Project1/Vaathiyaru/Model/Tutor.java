@@ -3,7 +3,7 @@ package com.Mini_Project1.Vaathiyaru.Model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "NewTutor")
+@Document(collection = "Tutor")
 public class Tutor {
 
     private int id;
@@ -11,17 +11,21 @@ public class Tutor {
     private String desc;
     private String location;
     private int exp;
+    private double ratings;
 
     // Constructors
-    public Tutor() {
+    Tutor() {
     }
 
-    public Tutor(int id, String heading, String desc, String location, int exp) {
+
+
+    public Tutor(int id, String heading, String desc, String location, int exp, double ratings) {
         this.id = id;
         this.heading = heading;
         this.desc = desc;
         this.location = location;
         this.exp = exp;
+        this.ratings=ratings;
     }
 
     // Getters and Setters
@@ -64,6 +68,13 @@ public class Tutor {
     public void setExp(int exp) {
         this.exp = exp;
     }
+    public double getRatings() {
+        return ratings;
+    }
+
+    public void setRatings(double ratings) {
+        this.ratings = ratings;
+    }
 
     // toString method
     @Override
@@ -71,7 +82,7 @@ public class Tutor {
         String ans="Hey there! Hope this message finds you well, \n \t A new user has been" +
                 "updated kindly contact him if necessary. Here are the details \n" +
                 "Name:"+this.heading+" \nDescription:"+this.desc+" \nLocation:"+this.location+
-                " \nWith experience of "+this.exp+" years";
+                " \nWith experience of "+this.exp+" years"+" Having ratings of "+this.ratings;
         return ans;
     }
 }
