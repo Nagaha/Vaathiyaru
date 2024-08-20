@@ -1,0 +1,25 @@
+/* styles.css */
+
+.app {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .listings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .listing {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f3e9e9;
+    box-shadow: 0 2px 4px rgba(93, 0, 0, 0.1);
+  }
+  
+  .location {
+    font-style: italic;
+    color: #888;
+  }
